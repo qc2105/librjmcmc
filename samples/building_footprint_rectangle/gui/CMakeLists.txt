@@ -8,5 +8,5 @@ endif()
 
 file( GLOB SRCS *.c *.cpp *.cxx *.h *.hpp *.hxx ../core/*.hpp ../core/*.cpp)
 add_executable( building_footprint_rectangle_gui ${exe_FLAG} ${SRCS} )
-target_link_libraries( building_footprint_rectangle_gui ${rjmcmc_LIBRARIES})
+target_link_libraries( building_footprint_rectangle_gui ${rjmcmc_LIBRARIES} X11)
 
